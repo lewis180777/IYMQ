@@ -29,7 +29,7 @@
     
     [self Label:0];
     
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 7; i++) {
         
         UIImageView *manImage = [UIImageView new];
         [manImage setFrame:(CGRect){10 + 40 * i,35,30,30}];
