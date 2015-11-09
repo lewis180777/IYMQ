@@ -1,0 +1,43 @@
+//
+//  IYMQ-PrefixHeader.pch
+//  IYMQ
+//
+//  Created by 陈亦海 on 15/10/29.
+//  Copyright © 2015年 陈亦海. All rights reserved.
+//
+
+#ifndef IYMQ_PrefixHeader_pch
+#define IYMQ_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import "ComponentsFactory.h"
+#import "CDCommonDefine.h"
+
+#ifdef DEBUG
+#define DLog(...) NSLog(__VA_ARGS__)
+#else
+#define DLog(...) /* */
+#endif
+#define ALog(...) NSLog(__VA_ARGS__)
+
+
+
+#define MainHeight  [[UIScreen mainScreen] bounds].size.height
+#define MainWidth   [[UIScreen mainScreen] bounds].size.width
+#define IOS_VERSION      [[[UIDevice currentDevice] systemVersion] floatValue]
+#define IOS7 IOS_VERSION >= 7
+#define IOS8 IOS_VERSION >= 8
+
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+//放大版的iphone6等于Iphone5的分辨率 《求区别办法》
+
+#define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) || CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size)) : NO)
+
+
+#define iPhone6plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(1125, 2001), [[UIScreen mainScreen] currentMode].size) || CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size)) : NO)
+
+#endif /* IYMQ_PrefixHeader_pch */

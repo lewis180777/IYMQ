@@ -1,0 +1,1 @@
+../../../ios-charts/Pod/Classes/renderer/model/EGMGraphDataPointRectRenderer.h

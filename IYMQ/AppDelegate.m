@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "IgnoreException.h"
+#import "MainTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -15,8 +17,27 @@
 @implementation AppDelegate
 
 
+- (void)dealloc
+{
+  
+    [IgnoreException unInstallIgnoreException];//注销捕获异常
+    
+
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+    [IgnoreException installIgnoreException];//启动捕获异常
+
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    self.window.backgroundColor = [UIColor whiteColor];
+    //xcode 7必须添加以下这句话
+    [[MainTabBarController sharedInstance] setAppRootTabBarcontrollers:0];
+    
+    self.window.rootViewController = [MainTabBarController sharedInstance];
+
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
