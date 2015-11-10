@@ -10,6 +10,7 @@
 #import "QHinfoItem.h"
 #import "QHinfoModel.h"
 #import "HDpeoleView.h"
+#import "QHMemberViewController.h"
 
 @interface QHinfoViewController ()<RETableViewManagerDelegate>
 
@@ -98,6 +99,16 @@
     
     HDpeoleView *hdView = [HDpeoleView new];
     [titleView addSubview:hdView];
+    
+    UIButton *hdButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    hdButton.backgroundColor = [UIColor clearColor];
+    hdButton.frame = hdView.frame;
+    [hdView addSubview:hdButton];
+    [hdButton addActionHandler:^(NSInteger tag) {
+        QHMemberViewController *memberView = [QHMemberViewController new];
+        [self.navigationController pushViewController:memberView animated:YES];
+    }];
+    
     [hdView mas_makeConstraints:^(MASConstraintMaker *make){
         make.left.mas_equalTo(@0).offset(0);
         make.top.mas_equalTo(Label.mas_topMargin).offset(25);
@@ -130,7 +141,7 @@
 - (void)addItems
 {
 
-    RETableViewSection *section = [RETableViewSection sectionWithHeaderView:[self addTitleView]];
+    RETableViewSection *section = [RETableViewSection sectionWithHeaderView:nil];
     [section setFooterView:[[UIView alloc]initWithFrame:CGRectMake(0, 0, MainWidth, 10) ]];
     [self.manager addSection:section];
     for (int i = 0; i < 3; i++) {
@@ -200,7 +211,7 @@
     [self.tableView setTableFooterView:sureBtn];
 //    [self.view addSubview:sureBtn];
     
-    //    [self.tableView setTableFooterView:botomView];
+    [self.tableView setTableHeaderView:[self addTitleView]];
     
 }
 

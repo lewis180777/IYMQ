@@ -188,6 +188,11 @@
 		8527A3B11BEC970100174BF8 /* down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8527A3B01BEC970100174BF8 /* down@2x.png */; };
 		8527A3B31BEC9A0400174BF8 /* down2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8527A3B21BEC9A0400174BF8 /* down2@2x.png */; };
 		8527A3B61BEC9DAB00174BF8 /* CYLSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8527A3B51BEC9DAB00174BF8 /* CYLSearchBar.m */; };
+		853326F71BF22EA200DDD3DA /* QHMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 853326F61BF22EA200DDD3DA /* QHMemberViewController.m */; };
+		853326FA1BF230C300DDD3DA /* QHMemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 853326F91BF230C300DDD3DA /* QHMemModel.m */; };
+		853326FD1BF2314C00DDD3DA /* QHMembetItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 853326FC1BF2314C00DDD3DA /* QHMembetItem.m */; };
+		853327001BF231C500DDD3DA /* QHMemberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 853326FF1BF231C500DDD3DA /* QHMemberCell.m */; };
+		8557C00C1BF23F6300B71DC0 /* QHSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8557C00B1BF23F6300B71DC0 /* QHSetupViewController.m */; };
 		856506DF1BEE3F2C00E3F418 /* SetUpTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856506DE1BEE3F2C00E3F418 /* SetUpTableViewController.m */; };
 		856506EB1BEE487B00E3F418 /* SetUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856506E91BEE487B00E3F418 /* SetUpViewController.m */; };
 		856506EC1BEE487B00E3F418 /* SetUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 856506EA1BEE487B00E3F418 /* SetUpViewController.xib */; };
@@ -546,6 +551,16 @@
 		8527A3B21BEC9A0400174BF8 /* down2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down2@2x.png"; sourceTree = "<group>"; };
 		8527A3B41BEC9DAB00174BF8 /* CYLSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLSearchBar.h; sourceTree = "<group>"; };
 		8527A3B51BEC9DAB00174BF8 /* CYLSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLSearchBar.m; sourceTree = "<group>"; };
+		853326F51BF22EA200DDD3DA /* QHMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHMemberViewController.h; sourceTree = "<group>"; };
+		853326F61BF22EA200DDD3DA /* QHMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHMemberViewController.m; sourceTree = "<group>"; };
+		853326F81BF230C300DDD3DA /* QHMemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHMemModel.h; sourceTree = "<group>"; };
+		853326F91BF230C300DDD3DA /* QHMemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHMemModel.m; sourceTree = "<group>"; };
+		853326FB1BF2314C00DDD3DA /* QHMembetItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHMembetItem.h; sourceTree = "<group>"; };
+		853326FC1BF2314C00DDD3DA /* QHMembetItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHMembetItem.m; sourceTree = "<group>"; };
+		853326FE1BF231C500DDD3DA /* QHMemberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHMemberCell.h; sourceTree = "<group>"; };
+		853326FF1BF231C500DDD3DA /* QHMemberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHMemberCell.m; sourceTree = "<group>"; };
+		8557C00A1BF23F6300B71DC0 /* QHSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHSetupViewController.h; sourceTree = "<group>"; };
+		8557C00B1BF23F6300B71DC0 /* QHSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHSetupViewController.m; sourceTree = "<group>"; };
 		856506DD1BEE3F2C00E3F418 /* SetUpTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetUpTableViewController.h; sourceTree = "<group>"; };
 		856506DE1BEE3F2C00E3F418 /* SetUpTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetUpTableViewController.m; sourceTree = "<group>"; };
 		856506E81BEE487B00E3F418 /* SetUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetUpViewController.h; sourceTree = "<group>"; };
@@ -640,6 +655,8 @@
 				8527A3941BEC475B00174BF8 /* QHlistModle.m */,
 				85AC18641BF0935700C3FE54 /* QHinfoModel.h */,
 				85AC18651BF0935700C3FE54 /* QHinfoModel.m */,
+				853326F81BF230C300DDD3DA /* QHMemModel.h */,
+				853326F91BF230C300DDD3DA /* QHMemModel.m */,
 			);
 			path = Modes;
 			sourceTree = "<group>";
@@ -655,6 +672,10 @@
 				85AC18681BF093D200C3FE54 /* QHinfoItem.m */,
 				85AC186A1BF0947E00C3FE54 /* QHinfoCell.h */,
 				85AC186B1BF0947E00C3FE54 /* QHinfoCell.m */,
+				853326FB1BF2314C00DDD3DA /* QHMembetItem.h */,
+				853326FC1BF2314C00DDD3DA /* QHMembetItem.m */,
+				853326FE1BF231C500DDD3DA /* QHMemberCell.h */,
+				853326FF1BF231C500DDD3DA /* QHMemberCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -818,6 +839,10 @@
 				8527A39D1BEC4F9500174BF8 /* QHRootViewController.m */,
 				85AC18611BF08B9D00C3FE54 /* QHinfoViewController.h */,
 				85AC18621BF08B9D00C3FE54 /* QHinfoViewController.m */,
+				853326F51BF22EA200DDD3DA /* QHMemberViewController.h */,
+				853326F61BF22EA200DDD3DA /* QHMemberViewController.m */,
+				8557C00A1BF23F6300B71DC0 /* QHSetupViewController.h */,
+				8557C00B1BF23F6300B71DC0 /* QHSetupViewController.m */,
 			);
 			path = "球会";
 			sourceTree = "<group>";
@@ -1759,12 +1784,14 @@
 				85226D011BE26ABA00357AA9 /* NSDictionary+Merge.m in Sources */,
 				85226D111BE26ABA00357AA9 /* NSString+Encrypt.m in Sources */,
 				85226D311BE26ABA00357AA9 /* UIImage+RemoteSize.m in Sources */,
+				853326FD1BF2314C00DDD3DA /* QHMembetItem.m in Sources */,
 				851F277B1BE8D8A300D43E78 /* XBBaseHttpRequestHelper.m in Sources */,
 				85226D481BE26ABA00357AA9 /* UIView+Toast.m in Sources */,
 				856506EB1BEE487B00E3F418 /* SetUpViewController.m in Sources */,
 				85226D1F1BE26ABA00357AA9 /* UIBezierPath+SVG.m in Sources */,
 				85222AEE1BEB38C900C170E2 /* BasicTableViewController.m in Sources */,
 				85226D4C1BE26ABA00357AA9 /* UIWebView+Alert.m in Sources */,
+				853326F71BF22EA200DDD3DA /* QHMemberViewController.m in Sources */,
 				851311EA1BEF32CF00EE199F /* SiteModle.m in Sources */,
 				85226CF71BE26ABA00357AA9 /* ComponentsFactory.m in Sources */,
 				85226D201BE26ABA00357AA9 /* UIButton+Block.m in Sources */,
@@ -1774,6 +1801,7 @@
 				85226D211BE26ABA00357AA9 /* UIButton+CountDown.m in Sources */,
 				851F27771BE8D8A300D43E78 /* AppDelegate+XBNetworkingMonitor.m in Sources */,
 				851F27781BE8D8A300D43E78 /* XBBusinessManager.m in Sources */,
+				853327001BF231C500DDD3DA /* QHMemberCell.m in Sources */,
 				851311D61BEF246D00EE199F /* HDbaomingTableViewController.m in Sources */,
 				85226D021BE26ABA00357AA9 /* NSDictionary+SafeAccess.m in Sources */,
 				85226D001BE26ABA00357AA9 /* NSDictionary+jsonString.m in Sources */,
@@ -1820,6 +1848,7 @@
 				85226CFF1BE26ABA00357AA9 /* NSDate+Utilities.m in Sources */,
 				85226CFB1BE26ABA00357AA9 /* NSData+Base64.m in Sources */,
 				85226D181BE26ABA00357AA9 /* NSTimer+Blocks.m in Sources */,
+				8557C00C1BF23F6300B71DC0 /* QHSetupViewController.m in Sources */,
 				85226D1E1BE26ABA00357AA9 /* MKMapView+ZoomLevel.m in Sources */,
 				85226D391BE26ABA00357AA9 /* UIResponder+Chain.m in Sources */,
 				85226D2C1BE26ABA00357AA9 /* UIImage+Color.m in Sources */,
@@ -1847,6 +1876,7 @@
 				85226D321BE26ABA00357AA9 /* UIImage+Resize.m in Sources */,
 				85226CF81BE26ABA00357AA9 /* NSArray+Block.m in Sources */,
 				85226D2B1BE26ABA00357AA9 /* UIImage+Capture.m in Sources */,
+				853326FA1BF230C300DDD3DA /* QHMemModel.m in Sources */,
 				8527A3A11BEC54AD00174BF8 /* CGlistModel.m in Sources */,
 				851311ED1BEF331200EE199F /* SiteItem.m in Sources */,
 				85226D121BE26ABA00357AA9 /* NSString+Hash.m in Sources */,

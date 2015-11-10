@@ -8,7 +8,7 @@
 
 #import "QHRootViewController.h"
 #import "QHRootTableViewController.h"
-#import "SetUpTableViewController.h"
+#import "QHSetupViewController.h"
 
 @interface QHRootViewController ()
 
@@ -35,7 +35,7 @@
     [rightButtonForSearch setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, -30)];
     [rightButtonForSearch addActionHandler:^(NSInteger tag){
         DLog(@"我来了");
-        SetUpTableViewController *setup = [[SetUpTableViewController alloc]init];
+        QHSetupViewController *setup = [[QHSetupViewController alloc]init];
         [self.navigationController pushViewController:setup animated:YES];
     }];
     
