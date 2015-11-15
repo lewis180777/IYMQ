@@ -25,7 +25,7 @@
 #import "RETableViewCell.h"
 #import "UIColor+Chameleon.h"     //颜色框架
 #import "TTTAttributedLabel.h"
-
+#import "RFSegmentView.h"
 
 
 /**

@@ -11,6 +11,7 @@
 #import "QHinfoModel.h"
 #import "HDpeoleView.h"
 #import "QHMemberViewController.h"
+#import "NewOrOldMemberViewController.h"
 
 @interface QHinfoViewController ()<RETableViewManagerDelegate>
 
@@ -205,7 +206,9 @@
 //    sureBtn.layer.cornerRadius = 4.0f;
     sureBtn.frame = (CGRect){0 ,MainHeight - 108,MainWidth,44};
     [sureBtn addActionHandler:^(NSInteger tag) {
-        
+        NewOrOldMemberViewController *member = [NewOrOldMemberViewController new];
+        member.type = newCode;
+        [self.navigationController pushViewController:member animated:YES];
     }];
     
     [self.tableView setTableFooterView:sureBtn];

@@ -18,6 +18,8 @@ typedef void (^ActionComplete)(UIButton *sender);
 
 -(void)addActionHandler:(TouchedBlock)touchHandler;
 
+#pragma mark -按钮只有文字
++ (UIButton *)bundleWithTitle:(NSString *)title BGColor:(UIColor *)color titleColor:(UIColor *)textColor textHighligtedColor:(UIColor *)highColor;
 
 #pragma mark - 不带高亮
 + (UIButton *)bundleButton:(NSString *)name;

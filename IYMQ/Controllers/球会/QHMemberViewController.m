@@ -56,16 +56,6 @@
         
     }
     
-    
-    
-
-     
-    
-        
-
-
-    
-    //    [self.manager addSectionsFromArray:items];  //添加整个数组RETableViewSection
 }
 
 

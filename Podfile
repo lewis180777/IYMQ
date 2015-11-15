@@ -12,7 +12,7 @@ pod 'SVProgressHUD'        #加载提示
 pod 'MBProgressHUD'        #加载提示
 pod 'JSONKit'              #json数据
 pod 'TTTAttributedLabel'   #多样Label
-pod 'ReactiveCocoa'        #RAC响应式编程框架
+pod 'ReactiveCocoa'        #RAC响应式与函数式编程框架
 pod 'pop'                  #动画
 pod 'Masonry'              #自动适配
 pod 'SDWebImage'           #图片下载

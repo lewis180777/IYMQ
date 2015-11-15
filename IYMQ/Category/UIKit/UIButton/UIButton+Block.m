@@ -37,6 +37,17 @@ static void * MyObjectMyCustomPorpertyKey = (void *)@"MyObjectMyCustomPorpertyKe
     objc_setAssociatedObject(self, MyObjectMyCustomPorpertyKey, actionComplete, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
+
++ (UIButton *)bundleWithTitle:(NSString *)title BGColor:(UIColor *)color titleColor:(UIColor *)textColor textHighligtedColor:(UIColor *)highColor {
+    UIButton *sureBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    sureBtn.backgroundColor = color;
+    [sureBtn setTitleColor:textColor forState:UIControlStateNormal];
+    [sureBtn setTitleColor:highColor forState:UIControlStateHighlighted];
+    [sureBtn setTitle:title forState:UIControlStateNormal];
+    return sureBtn;
+}
+
+
 + (UIButton *)bundleButton:(NSString *)name{
     NSString *path = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:name];
     

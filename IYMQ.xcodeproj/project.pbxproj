@@ -192,6 +192,9 @@
 		853326FA1BF230C300DDD3DA /* QHMemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 853326F91BF230C300DDD3DA /* QHMemModel.m */; };
 		853326FD1BF2314C00DDD3DA /* QHMembetItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 853326FC1BF2314C00DDD3DA /* QHMembetItem.m */; };
 		853327001BF231C500DDD3DA /* QHMemberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 853326FF1BF231C500DDD3DA /* QHMemberCell.m */; };
+		8544CFF71BF3688F00D32076 /* NewOrOldMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544CFF61BF3688F00D32076 /* NewOrOldMemberViewController.m */; };
+		8544CFFB1BF36E1600D32076 /* RFSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544CFFA1BF36E1600D32076 /* RFSegmentView.m */; };
+		8544CFFE1BF3813900D32076 /* HDorCommanageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8544CFFD1BF3813900D32076 /* HDorCommanageViewController.m */; };
 		8557C00C1BF23F6300B71DC0 /* QHSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8557C00B1BF23F6300B71DC0 /* QHSetupViewController.m */; };
 		856506DF1BEE3F2C00E3F418 /* SetUpTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856506DE1BEE3F2C00E3F418 /* SetUpTableViewController.m */; };
 		856506EB1BEE487B00E3F418 /* SetUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856506E91BEE487B00E3F418 /* SetUpViewController.m */; };
@@ -559,6 +562,12 @@
 		853326FC1BF2314C00DDD3DA /* QHMembetItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHMembetItem.m; sourceTree = "<group>"; };
 		853326FE1BF231C500DDD3DA /* QHMemberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHMemberCell.h; sourceTree = "<group>"; };
 		853326FF1BF231C500DDD3DA /* QHMemberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHMemberCell.m; sourceTree = "<group>"; };
+		8544CFF51BF3688F00D32076 /* NewOrOldMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewOrOldMemberViewController.h; sourceTree = "<group>"; };
+		8544CFF61BF3688F00D32076 /* NewOrOldMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewOrOldMemberViewController.m; sourceTree = "<group>"; };
+		8544CFF91BF36E1600D32076 /* RFSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSegmentView.h; sourceTree = "<group>"; };
+		8544CFFA1BF36E1600D32076 /* RFSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSegmentView.m; sourceTree = "<group>"; };
+		8544CFFC1BF3813900D32076 /* HDorCommanageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDorCommanageViewController.h; sourceTree = "<group>"; };
+		8544CFFD1BF3813900D32076 /* HDorCommanageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDorCommanageViewController.m; sourceTree = "<group>"; };
 		8557C00A1BF23F6300B71DC0 /* QHSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHSetupViewController.h; sourceTree = "<group>"; };
 		8557C00B1BF23F6300B71DC0 /* QHSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHSetupViewController.m; sourceTree = "<group>"; };
 		856506DD1BEE3F2C00E3F418 /* SetUpTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetUpTableViewController.h; sourceTree = "<group>"; };
@@ -737,6 +746,7 @@
 		851F27651BE8D8A300D43E78 /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				8544CFF81BF36E1600D32076 /* RFSegmentView */,
 				851F277D1BE8D8D300D43E78 /* HUDView */,
 				851F27671BE8D8A300D43E78 /* BusinessManager */,
 				851F276D1BE8D8A300D43E78 /* Networking */,
@@ -843,6 +853,10 @@
 				853326F61BF22EA200DDD3DA /* QHMemberViewController.m */,
 				8557C00A1BF23F6300B71DC0 /* QHSetupViewController.h */,
 				8557C00B1BF23F6300B71DC0 /* QHSetupViewController.m */,
+				8544CFF51BF3688F00D32076 /* NewOrOldMemberViewController.h */,
+				8544CFF61BF3688F00D32076 /* NewOrOldMemberViewController.m */,
+				8544CFFC1BF3813900D32076 /* HDorCommanageViewController.h */,
+				8544CFFD1BF3813900D32076 /* HDorCommanageViewController.m */,
 			);
 			path = "球会";
 			sourceTree = "<group>";
@@ -1598,6 +1612,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		8544CFF81BF36E1600D32076 /* RFSegmentView */ = {
+			isa = PBXGroup;
+			children = (
+				8544CFF91BF36E1600D32076 /* RFSegmentView.h */,
+				8544CFFA1BF36E1600D32076 /* RFSegmentView.m */,
+			);
+			path = RFSegmentView;
+			sourceTree = "<group>";
+		};
 		85A983A71BE6483900D1731F /* TabBarController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1816,6 +1839,7 @@
 				85226D281BE26ABA00357AA9 /* UIDevice+Hardware.m in Sources */,
 				85226CFA1BE26ABA00357AA9 /* NSBundle+AppIcon.m in Sources */,
 				85226D031BE26ABA00357AA9 /* NSException+Trace.m in Sources */,
+				8544CFF71BF3688F00D32076 /* NewOrOldMemberViewController.m in Sources */,
 				85226D3A1BE26ABA00357AA9 /* UIResponder+UIAdapt.m in Sources */,
 				85226CFE1BE26ABA00357AA9 /* NSDate+Addition.m in Sources */,
 				85226D4F1BE26ABA00357AA9 /* UIWebView+JS.m in Sources */,
@@ -1840,6 +1864,7 @@
 				8527A39B1BEC494B00174BF8 /* QHlistCell.m in Sources */,
 				85226D421BE26ABA00357AA9 /* UIView+BlockGesture.m in Sources */,
 				851311CE1BEF150A00EE199F /* BMrenView.m in Sources */,
+				8544CFFB1BF36E1600D32076 /* RFSegmentView.m in Sources */,
 				8527A3921BEC46EB00174BF8 /* QHRootTableViewController.m in Sources */,
 				85226D3D1BE26ABA00357AA9 /* UISearchBar+Blocks.m in Sources */,
 				851311F01BEF338900EE199F /* SiteCell.m in Sources */,
@@ -1857,6 +1882,7 @@
 				85226D601BE26ABA00357AA9 /* CoreAnimationEffect.m in Sources */,
 				85226D531BE26ABA00357AA9 /* UIWindow+Hierarchy.m in Sources */,
 				8527A3981BEC482100174BF8 /* QHlistItem.m in Sources */,
+				8544CFFE1BF3813900D32076 /* HDorCommanageViewController.m in Sources */,
 				851EFF9D1BE79BC400C87B7B /* BasicViewController.m in Sources */,
 				85226D1D1BE26ABA00357AA9 /* UIImage+Category.m in Sources */,
 				85226D301BE26ABA00357AA9 /* UIImage+Orientation.m in Sources */,
