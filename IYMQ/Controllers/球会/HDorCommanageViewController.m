@@ -43,40 +43,40 @@
     
     for (int i = 0; i < 12; i++) {
         
-        HDlistModel *list = [HDlistModel new];
-        list.timeString = @"08.31(周二) 15：50";
-        list.codeString = @"报名";
-        list.imgString = @"fff";
-        list.nameString = @"狮山羽毛球馆打啵";
-        list.qiuguangString = @"狮山羽毛球馆";
-        list.qiuhuiString = @"i羽毛球球会";
-        list.juliString = @"8KM";
-        list.countString = @"10/20";
-        list.manString = @"黄婷婷";
-        [items addObject:list];
+//        HDlistModel *list = [HDlistModel new];
+//        list.timeString = @"08.31(周二) 15：50";
+//        list.codeString = @"报名";
+//        list.imgString = @"fff";
+//        list.nameString = @"狮山羽毛球馆打啵";
+//        list.qiuguangString = @"狮山羽毛球馆";
+//        list.qiuhuiString = @"i羽毛球球会";
+//        list.juliString = @"8KM";
+//        list.countString = @"10/20";
+//        list.manString = @"黄婷婷";
+//        [items addObject:list];
         
     }
     
     
-    
-    for (HDlistModel *dictionary in items) {
-        // Create section with a header view
-        //
-        
-        UIView *backgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, MainWidth, 10)];
-        backgroundView.backgroundColor = [UIColor clearColor];
-        backgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-        
-        RETableViewSection *section = [RETableViewSection sectionWithHeaderView:backgroundView];
-        //        RETableViewSection *section = [RETableViewSection section];
-        [self.manager addSection:section];
-        
-        // Add item (image)
-        //
-        [section addItem:[HDlistItem itemWithHDlistModel:dictionary]];
-        
-        //        [items addObject:section];
-    }
+//    
+//    for (HDlistModel *dictionary in items) {
+//        // Create section with a header view
+//        //
+//        
+//        UIView *backgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, MainWidth, 10)];
+//        backgroundView.backgroundColor = [UIColor clearColor];
+//        backgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+//        
+//        RETableViewSection *section = [RETableViewSection sectionWithHeaderView:backgroundView];
+//        //        RETableViewSection *section = [RETableViewSection section];
+//        [self.manager addSection:section];
+//        
+//        // Add item (image)
+//        //
+//        [section addItem:[HDlistItem itemWithHDlistModel:dictionary]];
+//        
+//        //        [items addObject:section];
+//    }
     
     //    [self.manager addSectionsFromArray:items];  //添加整个数组RETableViewSection
 }
