@@ -9,6 +9,7 @@
 #import "QHRootViewController.h"
 #import "QHRootTableViewController.h"
 #import "QHSetupViewController.h"
+#import "HDorCommanageViewController.h"
 
 @interface QHRootViewController ()
 

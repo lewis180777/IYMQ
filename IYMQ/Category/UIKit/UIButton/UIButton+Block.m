@@ -53,7 +53,8 @@ static void * MyObjectMyCustomPorpertyKey = (void *)@"MyObjectMyCustomPorpertyKe
     
     UIImage *image = [UIImage imageWithContentsOfFile:path];
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(0, 0, image.size.width/2, image.size.height/2);
+    button.backgroundColor = [UIColor clearColor];
+//    button.frame = CGRectMake(0, 0, image.size.width/2, image.size.height/2);
     [button setBackgroundImage:image forState:UIControlStateNormal];
     
     return button;

@@ -41,4 +41,5 @@
                   andDataType:(Class)dataClass andIdentifier:(NSString *)identifier;
 
 + (void)removeBusinessDelegate:(id)delegate;
+
 @end

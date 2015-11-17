@@ -9,7 +9,7 @@
 #import "HDRootViewController.h"
 #import "HDRootTableViewController.h"
 #import "SetUpViewController.h"
-
+#import "HDorCommanageViewController.h"
 
 @interface HDRootViewController ()
 
@@ -58,6 +58,8 @@
     [leftButton setTitleEdgeInsets:UIEdgeInsetsMake(0, -50, 0, 0)];
     [leftButton addActionHandler:^(NSInteger tag){
         DLog(@"南宁市本地");
+        HDorCommanageViewController *hdOrCommanage = [HDorCommanageViewController new];
+        [self.navigationController pushViewController:hdOrCommanage animated:YES];
 
     }];
     [hearview addSubview:leftButton];

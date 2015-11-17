@@ -7,14 +7,21 @@
 //
 
 #import "HDorCommanageViewController.h"
+#import "HDManagementItem.h"
+#import "HDManagementModel.h"
+#import "SSuManagementModel.h"
+#import "SSuMangementItem.h"
 
 @interface HDorCommanageViewController ()<RFSegmentViewDelegate,RETableViewManagerDelegate>
 
 @property (strong, readwrite, nonatomic) RETableViewManager *manager;
+//@property (strong, readwrite, nonatomic) RETableViewManager *managerToo;
 
 @end
 
 @implementation HDorCommanageViewController
+
+@synthesize type;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,64 +32,101 @@
     segmentView.delegate = self;
     self.navigationItem.titleView = segmentView;
     
-    //
-    self.manager = [[RETableViewManager alloc] initWithTableView:self.tableView];
-    self.manager.delegate = self;
-    // Map item to a cell
-    //
-    self.manager[@"HDlistItem"] = @"HDlistCell"; // which is the same as
-//    [self.manager registerClass:@"HDlistItem" forCellWithReuseIdentifier:@"HDlistCell"];
+
 
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    [self addItems];
     // Do any additional setup after loading the view.
 }
 
 - (void)addItems
 {
+    
+    self.manager = [[RETableViewManager alloc] initWithTableView:self.tableView];
+    self.manager.delegate = self;
+    
+//    self.managerToo = [[RETableViewManager alloc] initWithTableView:self.tableView];
+//    self.managerToo.delegate = self;
+
+    
+    //**********活动管理
     NSMutableArray *items = [NSMutableArray array];
     
     for (int i = 0; i < 12; i++) {
         
-//        HDlistModel *list = [HDlistModel new];
-//        list.timeString = @"08.31(周二) 15：50";
-//        list.codeString = @"报名";
-//        list.imgString = @"fff";
-//        list.nameString = @"狮山羽毛球馆打啵";
-//        list.qiuguangString = @"狮山羽毛球馆";
-//        list.qiuhuiString = @"i羽毛球球会";
-//        list.juliString = @"8KM";
-//        list.countString = @"10/20";
-//        list.manString = @"黄婷婷";
-//        [items addObject:list];
+        UIView *backgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, MainWidth, 10)];
+        backgroundView.backgroundColor = [UIColor clearColor];
+        backgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         
+        RETableViewSection *section = [RETableViewSection sectionWithHeaderView:backgroundView];
+        //        RETableViewSection *section = [RETableViewSection section];
+       
+        
+        if(type == HDTypeMan) {
+
+
+            self.manager[@"HDManagementItem"] = @"HDManagementCell";
+            
+            HDManagementModel *list = [HDManagementModel new];
+            list.timeString = @"08.31(周二) 15：50";
+            list.codeString = @"报名";
+            list.imgString = @"fff";
+            list.nameString = @"狮山羽毛球馆打啵";
+            list.qiuhuiString = @"i羽毛球球会";
+            list.juliString = @"8KM";
+            list.countString = @"10/20";
+            
+            [section addItem:[HDManagementItem itemWithHDManagementModel:list]];
+            [self.manager addSection:section];
+
+        }
+        else if (type == SSTypeMen) {
+
+            self.manager[@"SSuMangementItem"] = @"SSuMangementCell";
+            
+            SSuManagementModel *list = [SSuManagementModel new];
+
+            list.codeString = @"报名";
+            list.textString = @"狮山羽毛球馆打啵狮山羽毛球馆打啵狮山羽毛球馆打啵狮山羽毛球馆打啵狮山羽毛球馆打啵狮山羽毛球馆打啵狮山羽毛球馆打啵狮山羽毛球馆打啵狮山羽毛球馆打啵狮山羽毛球馆打啵狮山羽毛球馆打啵狮山羽毛球馆打啵";
+            list.teger = 2;
+
+            [section addItem:[SSuMangementItem itemWithSSuManagementModel:list]];
+            
+            [self.manager addSection:section];
+        }
+        
+        [items addObject:section];
     }
     
-    
-//    
-//    for (HDlistModel *dictionary in items) {
-//        // Create section with a header view
-//        //
-//        
-//        UIView *backgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, MainWidth, 10)];
-//        backgroundView.backgroundColor = [UIColor clearColor];
-//        backgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-//        
-//        RETableViewSection *section = [RETableViewSection sectionWithHeaderView:backgroundView];
-//        //        RETableViewSection *section = [RETableViewSection section];
-//        [self.manager addSection:section];
-//        
-//        // Add item (image)
-//        //
-//        [section addItem:[HDlistItem itemWithHDlistModel:dictionary]];
-//        
-//        //        [items addObject:section];
-//    }
-    
-    //    [self.manager addSectionsFromArray:items];  //添加整个数组RETableViewSection
+//    [self.manager addSectionsFromArray:items];  //添加整个数组RETableViewSection
 }
 
 
 - (void)segmentViewSelectIndex:(NSInteger)index {
+    switch (index) {
+        case 0:
+            type = HDTypeMan;
+
+            break;
+            
+        case 1:
+            type = SSTypeMen;
+
+            break;
+            
+        default:
+            break;
+    }
+    
+    [self.manager removeAllSections];
+    [self.tableView reloadData];
+    
+    self.manager.delegate = nil;
+    self.manager = nil;
+    
+    [self addItems];
+    
     
 }
 
