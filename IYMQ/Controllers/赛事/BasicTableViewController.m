@@ -9,6 +9,7 @@
 #import "BasicTableViewController.h"
 #import "ListImageItem.h"
 #import "SHlistModel.h"
+#import "SHGameInfoViewController.h"
 
 @interface BasicTableViewController ()<RETableViewManagerDelegate>
 
@@ -129,8 +130,16 @@
 //    [self.manager removeSectionAtIndex:indexPath.section];  //删除其中某一条
 
      [self.tableView reloadData];
+    
+    [self loadSHGameInfoVC];
 }
 
+- (void)loadSHGameInfoVC
+{
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"SHGame" bundle:nil];
+    SHGameInfoViewController *gameInfoVC = [sb instantiateViewControllerWithIdentifier:@"SHGameVC"];
+    [self.navigationController pushViewController:gameInfoVC animated:YES];
+}
 
 
 //- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

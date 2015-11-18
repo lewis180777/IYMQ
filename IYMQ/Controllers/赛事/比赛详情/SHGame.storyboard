@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Game Info View Controller-->
+        <scene sceneID="DMQ-8p-yu4">
+            <objects>
+                <viewController storyboardIdentifier="SHGameVC" id="5He-h7-Tv4" customClass="SHGameInfoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pe1-LH-oPm"/>
+                        <viewControllerLayoutGuide type="bottom" id="ujX-7L-zCp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="npA-Ut-bhM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="100" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ko9-y3-0Gg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SHGameHeadCellIndex" rowHeight="101" id="dKu-FT-YbC" customClass="SHGameHeadTableViewCell">
+                                        <rect key="frame" x="0.0" y="50" width="320" height="101"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dKu-FT-YbC" id="aJO-H0-hMZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="图片默认底图.png" translatesAutoresizingMaskIntoConstraints="NO" id="P5q-aG-BLD">
+                                                    <rect key="frame" x="13" y="17" width="83" height="67"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="83" id="NqH-L2-S7c"/>
+                                                        <constraint firstAttribute="height" constant="67" id="xXf-mh-ggV"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第一届 “i羽毛球杯” 混合团体赛" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyl-ZD-lSq">
+                                                    <rect key="frame" x="104" y="17" width="208" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="15" id="I0p-Jx-24p"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Uv-jh-Ekn">
+                                                    <rect key="frame" x="104" y="69" width="13" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="15" id="CBb-UQ-LmG"/>
+                                                        <constraint firstAttribute="width" constant="13" id="TJ0-HN-AAG"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="团体赛" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wg-ah-xDt">
+                                                    <rect key="frame" x="125" y="69" width="60" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="15" id="jDl-Vh-0Yn"/>
+                                                        <constraint firstAttribute="width" constant="60" id="pNc-tC-eTD"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="比赛中.png" translatesAutoresizingMaskIntoConstraints="NO" id="FAO-3B-RW3">
+                                                    <rect key="frame" x="253" y="64" width="47" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="47" id="5Kj-Po-5Ix"/>
+                                                        <constraint firstAttribute="height" constant="20" id="b7X-8g-8HM"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="FAO-3B-RW3" secondAttribute="bottom" constant="16" id="3wt-4U-PoM"/>
+                                                <constraint firstAttribute="trailing" secondItem="FAO-3B-RW3" secondAttribute="trailing" constant="20" id="9c9-OC-BFB"/>
+                                                <constraint firstItem="P5q-aG-BLD" firstAttribute="top" secondItem="aJO-H0-hMZ" secondAttribute="top" constant="17" id="K9y-Ay-PdL"/>
+                                                <constraint firstItem="P5q-aG-BLD" firstAttribute="leading" secondItem="aJO-H0-hMZ" secondAttribute="leading" constant="13" id="OAI-iK-W3s"/>
+                                                <constraint firstItem="8Uv-jh-Ekn" firstAttribute="leading" secondItem="P5q-aG-BLD" secondAttribute="trailing" constant="8" id="c6Q-Mf-fHD"/>
+                                                <constraint firstAttribute="bottom" secondItem="8Uv-jh-Ekn" secondAttribute="bottom" constant="16" id="ehz-0i-mHn"/>
+                                                <constraint firstItem="yyl-ZD-lSq" firstAttribute="leading" secondItem="P5q-aG-BLD" secondAttribute="trailing" constant="8" id="gDi-09-Q1k"/>
+                                                <constraint firstAttribute="bottom" secondItem="7wg-ah-xDt" secondAttribute="bottom" constant="16" id="gou-ku-rWd"/>
+                                                <constraint firstItem="7wg-ah-xDt" firstAttribute="leading" secondItem="8Uv-jh-Ekn" secondAttribute="trailing" constant="8" id="nKj-7e-8wp"/>
+                                                <constraint firstItem="yyl-ZD-lSq" firstAttribute="top" secondItem="aJO-H0-hMZ" secondAttribute="top" constant="17" id="oiW-bG-tu6"/>
+                                                <constraint firstAttribute="trailing" secondItem="yyl-ZD-lSq" secondAttribute="trailing" constant="8" id="vfL-CT-qdR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="iconImageView" destination="P5q-aG-BLD" id="xof-Lt-f3q"/>
+                                            <outlet property="iocn1ImageView" destination="8Uv-jh-Ekn" id="r2T-KP-DQv"/>
+                                            <outlet property="stateImageView" destination="FAO-3B-RW3" id="im9-be-WUY"/>
+                                            <outlet property="subTitleLabel" destination="7wg-ah-xDt" id="sx1-GR-lLe"/>
+                                            <outlet property="titleLabel" destination="yyl-ZD-lSq" id="UgT-oK-dwI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="5He-h7-Tv4" id="QnH-oW-QTG"/>
+                                    <outlet property="delegate" destination="5He-h7-Tv4" id="xn6-nV-dBG"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ko9-y3-0Gg" firstAttribute="top" secondItem="npA-Ut-bhM" secondAttribute="top" id="N4X-gK-4oj"/>
+                            <constraint firstItem="ujX-7L-zCp" firstAttribute="top" secondItem="ko9-y3-0Gg" secondAttribute="bottom" id="fVY-1s-4N8"/>
+                            <constraint firstItem="ko9-y3-0Gg" firstAttribute="leading" secondItem="npA-Ut-bhM" secondAttribute="leading" id="rNt-ev-cE3"/>
+                            <constraint firstAttribute="trailing" secondItem="ko9-y3-0Gg" secondAttribute="trailing" id="ts2-ES-HZr"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="gameTableView" destination="ko9-y3-0Gg" id="8gX-ib-U4w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="deU-0j-jEE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="290"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="图片默认底图.png" width="83" height="66"/>
+        <image name="比赛中.png" width="46" height="20"/>
+    </resources>
+</document>

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1660BCABECA4E244A91AC869 /* libPods-IYMQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47773781B7A7CE7846944D62 /* libPods-IYMQ.a */; };
+		5D1DCB4D1BFC2BA2001DD8D4 /* SHGameHeadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1DCB4C1BFC2BA2001DD8D4 /* SHGameHeadTableViewCell.m */; };
+		5D24489F1BFC122A007C3125 /* SHGameInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D24489E1BFC122A007C3125 /* SHGameInfoViewController.m */; };
+		5D2448A11BFC1285007C3125 /* SHGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D2448A01BFC1285007C3125 /* SHGame.storyboard */; };
+		5D8793B31BFC43CC004C9F68 /* SHGameNoRegTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8793B11BFC43CC004C9F68 /* SHGameNoRegTableViewCell.m */; };
+		5D8793B41BFC43CC004C9F68 /* SHGameNoRegTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D8793B21BFC43CC004C9F68 /* SHGameNoRegTableViewCell.xib */; };
 		850C0E361BFA17FA00EEFBEC /* HDManagementItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 850C0E351BFA17FA00EEFBEC /* HDManagementItem.m */; };
 		850C0E391BFA185900EEFBEC /* HDManagementModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 850C0E381BFA185900EEFBEC /* HDManagementModel.m */; };
 		850C0E3C1BFA19A600EEFBEC /* HDManagementCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 850C0E3B1BFA19A600EEFBEC /* HDManagementCell.m */; };
@@ -227,6 +232,14 @@
 
 /* Begin PBXFileReference section */
 		47773781B7A7CE7846944D62 /* libPods-IYMQ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IYMQ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D1DCB4B1BFC2BA2001DD8D4 /* SHGameHeadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHGameHeadTableViewCell.h; sourceTree = "<group>"; };
+		5D1DCB4C1BFC2BA2001DD8D4 /* SHGameHeadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHGameHeadTableViewCell.m; sourceTree = "<group>"; };
+		5D24489D1BFC122A007C3125 /* SHGameInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHGameInfoViewController.h; sourceTree = "<group>"; };
+		5D24489E1BFC122A007C3125 /* SHGameInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHGameInfoViewController.m; sourceTree = "<group>"; };
+		5D2448A01BFC1285007C3125 /* SHGame.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SHGame.storyboard; sourceTree = "<group>"; };
+		5D8793B01BFC43CC004C9F68 /* SHGameNoRegTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHGameNoRegTableViewCell.h; sourceTree = "<group>"; };
+		5D8793B11BFC43CC004C9F68 /* SHGameNoRegTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHGameNoRegTableViewCell.m; sourceTree = "<group>"; };
+		5D8793B21BFC43CC004C9F68 /* SHGameNoRegTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHGameNoRegTableViewCell.xib; sourceTree = "<group>"; };
 		850C0E341BFA17FA00EEFBEC /* HDManagementItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDManagementItem.h; sourceTree = "<group>"; };
 		850C0E351BFA17FA00EEFBEC /* HDManagementItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDManagementItem.m; sourceTree = "<group>"; };
 		850C0E371BFA185900EEFBEC /* HDManagementModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDManagementModel.h; sourceTree = "<group>"; };
@@ -653,6 +666,37 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5D1DCB4A1BFC2B7D001DD8D4 /* headCell */ = {
+			isa = PBXGroup;
+			children = (
+				5D1DCB4B1BFC2BA2001DD8D4 /* SHGameHeadTableViewCell.h */,
+				5D1DCB4C1BFC2BA2001DD8D4 /* SHGameHeadTableViewCell.m */,
+			);
+			path = headCell;
+			sourceTree = "<group>";
+		};
+		5D24489C1BFC11D7007C3125 /* 比赛详情 */ = {
+			isa = PBXGroup;
+			children = (
+				5D1DCB4A1BFC2B7D001DD8D4 /* headCell */,
+				5D8793AF1BFC43A8004C9F68 /* noRegCell */,
+				5D24489D1BFC122A007C3125 /* SHGameInfoViewController.h */,
+				5D24489E1BFC122A007C3125 /* SHGameInfoViewController.m */,
+				5D2448A01BFC1285007C3125 /* SHGame.storyboard */,
+			);
+			path = "比赛详情";
+			sourceTree = "<group>";
+		};
+		5D8793AF1BFC43A8004C9F68 /* noRegCell */ = {
+			isa = PBXGroup;
+			children = (
+				5D8793B01BFC43CC004C9F68 /* SHGameNoRegTableViewCell.h */,
+				5D8793B11BFC43CC004C9F68 /* SHGameNoRegTableViewCell.m */,
+				5D8793B21BFC43CC004C9F68 /* SHGameNoRegTableViewCell.xib */,
+			);
+			path = noRegCell;
+			sourceTree = "<group>";
+		};
 		851C44FF1BFB4CC5006C16B2 /* APPDelegate类别 */ = {
 			isa = PBXGroup;
 			children = (
@@ -928,12 +972,13 @@
 		851F27811BE8D97700D43E78 /* 赛事 */ = {
 			isa = PBXGroup;
 			children = (
-				851F02D11BEB920E00EFB597 /* Modes */,
-				851F02D21BEB920E00EFB597 /* Views */,
 				851F27831BE8D9BC00D43E78 /* SHRootViewController.h */,
 				851F27841BE8D9BC00D43E78 /* SHRootViewController.m */,
 				85222AEC1BEB38C900C170E2 /* BasicTableViewController.h */,
 				85222AED1BEB38C900C170E2 /* BasicTableViewController.m */,
+				851F02D11BEB920E00EFB597 /* Modes */,
+				851F02D21BEB920E00EFB597 /* Views */,
+				5D24489C1BFC11D7007C3125 /* 比赛详情 */,
 			);
 			path = "赛事";
 			sourceTree = "<group>";
@@ -1776,6 +1821,7 @@
 				851311F81BEF419C00EE199F /* 时间@2x.png in Resources */,
 				851EFFA31BE79E0200C87B7B /* 活动@2x.png in Resources */,
 				851311DF1BEF2AB600EE199F /* 单选按钮1@2x.png in Resources */,
+				5D2448A11BFC1285007C3125 /* SHGame.storyboard in Resources */,
 				851F048A1BEBA0FA00EFB597 /* 位置@2x.png in Resources */,
 				856506F91BEE578900E3F418 /* 勾选1@2x.png in Resources */,
 				8527A3AF1BEC94A400174BF8 /* daohang@2x.png in Resources */,
@@ -1795,6 +1841,7 @@
 				851311E11BEF2AB600EE199F /* 女@2x.png in Resources */,
 				851311E01BEF2AB600EE199F /* 男@2x.png in Resources */,
 				851F278C1BE8DCD200D43E78 /* 菜单@2x.png in Resources */,
+				5D8793B41BFC43CC004C9F68 /* SHGameNoRegTableViewCell.xib in Resources */,
 				851EFFA71BE79E1900C87B7B /* 赛事@2x.png in Resources */,
 				856506EE1BEE4F7C00E3F418 /* 导航@2x.png in Resources */,
 				85222AFE1BEB4CFA00C170E2 /* 比赛中@3x.png in Resources */,
@@ -1866,6 +1913,7 @@
 				851F04821BEB985600EFB597 /* HDlistModel.m in Sources */,
 				85226D2E1BE26ABA00357AA9 /* UIImage+FX.m in Sources */,
 				851F277A1BE8D8A300D43E78 /* LGHTTPClient.m in Sources */,
+				5D1DCB4D1BFC2BA2001DD8D4 /* SHGameHeadTableViewCell.m in Sources */,
 				851F277C1BE8D8A300D43E78 /* ZPRequestService.m in Sources */,
 				851311D31BEF216300EE199F /* PayStyleView.m in Sources */,
 				85226D291BE26ABA00357AA9 /* UIImage+Alpha.m in Sources */,
@@ -1943,6 +1991,7 @@
 				85226D191BE26ABA00357AA9 /* NSURL+Param.m in Sources */,
 				85226CFF1BE26ABA00357AA9 /* NSDate+Utilities.m in Sources */,
 				85226CFB1BE26ABA00357AA9 /* NSData+Base64.m in Sources */,
+				5D24489F1BFC122A007C3125 /* SHGameInfoViewController.m in Sources */,
 				85226D181BE26ABA00357AA9 /* NSTimer+Blocks.m in Sources */,
 				8557C00C1BF23F6300B71DC0 /* QHSetupViewController.m in Sources */,
 				85226D1E1BE26ABA00357AA9 /* MKMapView+ZoomLevel.m in Sources */,
@@ -2020,6 +2069,7 @@
 				85226D221BE26ABA00357AA9 /* UIButton+Indicator.m in Sources */,
 				85226D161BE26ABA00357AA9 /* NSString+UUID.m in Sources */,
 				85226D171BE26ABA00357AA9 /* NSTimer+Addition.m in Sources */,
+				5D8793B31BFC43CC004C9F68 /* SHGameNoRegTableViewCell.m in Sources */,
 				85226D041BE26ABA00357AA9 /* NSFileManager+Paths.m in Sources */,
 				8527A3951BEC475B00174BF8 /* QHlistModle.m in Sources */,
 				85226D491BE26ABA00357AA9 /* UIViewController+MJPopupViewController.m in Sources */,
