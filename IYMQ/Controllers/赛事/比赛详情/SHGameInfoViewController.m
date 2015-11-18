@@ -9,11 +9,15 @@
 #import "SHGameInfoViewController.h"
 #import "SHGameHeadTableViewCell.h"
 
+#define addButtonWH 72
+
 @interface SHGameInfoViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *gameTableView;
 
 @property (strong, nonatomic) NSMutableArray *arrayData;
+
+@property (strong, nonatomic) UIButton *addButton;  // 加号按钮
 
 @end
 
@@ -32,12 +36,24 @@
     // Do any additional setup after loading the view.
     
     self.title = @"比赛详情";
+    
+    [self loadAddIconButton];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden = NO;
+}
+
+#pragma mark - 创建底部加号
+- (void)loadAddIconButton
+{
+    UIButton *addButton = [[UIButton alloc] initWithFrame:CGRectMake(MainWidth - 20, MainHeight - 20, addButtonWH, addButtonWH)];
+    addButton.transform = CGAffineTransformMakeRotation(M_PI_4);
+    [addButton setBackgroundImage:[UIImage imageNamed:@"jiahao"] forState:UIControlStateNormal];
+    [addButton addTarget:self action:@selector(addButtonClicked) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:addButton];
 }
 
 #pragma mark - UITableView Delegate and Datasource
@@ -53,6 +69,12 @@
     }
     
     return 0;
+}
+
+#pragma mark - 加号按钮点击
+- (void)addButtonClicked
+{
+    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath

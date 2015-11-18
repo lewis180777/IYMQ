@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1660BCABECA4E244A91AC869 /* libPods-IYMQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47773781B7A7CE7846944D62 /* libPods-IYMQ.a */; };
+		18DDC1831BFCA58F0032FC62 /* iconfont-dierming@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18DDC1821BFCA58F0032FC62 /* iconfont-dierming@3x.png */; };
+		18DDC1851BFCA68B0032FC62 /* jiahao@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18DDC1841BFCA68B0032FC62 /* jiahao@3x.png */; };
 		5D1DCB4D1BFC2BA2001DD8D4 /* SHGameHeadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1DCB4C1BFC2BA2001DD8D4 /* SHGameHeadTableViewCell.m */; };
 		5D24489F1BFC122A007C3125 /* SHGameInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D24489E1BFC122A007C3125 /* SHGameInfoViewController.m */; };
 		5D2448A11BFC1285007C3125 /* SHGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D2448A01BFC1285007C3125 /* SHGame.storyboard */; };
@@ -231,6 +233,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18DDC1821BFCA58F0032FC62 /* iconfont-dierming@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-dierming@3x.png"; sourceTree = "<group>"; };
+		18DDC1841BFCA68B0032FC62 /* jiahao@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jiahao@3x.png"; sourceTree = "<group>"; };
 		47773781B7A7CE7846944D62 /* libPods-IYMQ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IYMQ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D1DCB4B1BFC2BA2001DD8D4 /* SHGameHeadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHGameHeadTableViewCell.h; sourceTree = "<group>"; };
 		5D1DCB4C1BFC2BA2001DD8D4 /* SHGameHeadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHGameHeadTableViewCell.m; sourceTree = "<group>"; };
@@ -1036,6 +1040,8 @@
 				85222AFB1BEB4CFA00C170E2 /* 比赛中@3x.png */,
 				85222AFC1BEB4CFA00C170E2 /* 图片默认底图@3x.png */,
 				851F278B1BE8DCD200D43E78 /* 菜单@2x.png */,
+				18DDC1821BFCA58F0032FC62 /* iconfont-dierming@3x.png */,
+				18DDC1841BFCA68B0032FC62 /* jiahao@3x.png */,
 			);
 			path = "赛事";
 			sourceTree = "<group>";
@@ -1815,6 +1821,7 @@
 				851311DE1BEF2AB600EE199F /* 单选按钮@2x.png in Resources */,
 				856506F01BEE53F200E3F418 /* 返回按钮@2x.png in Resources */,
 				856506F51BEE54FE00E3F418 /* SetUpTooViewController.xib in Resources */,
+				18DDC1851BFCA68B0032FC62 /* jiahao@3x.png in Resources */,
 				851EFFA41BE79E0200C87B7B /* 球会@2x.png in Resources */,
 				8527A3B31BEC9A0400174BF8 /* down2@2x.png in Resources */,
 				85222AFF1BEB4CFA00C170E2 /* 图片默认底图@3x.png in Resources */,
@@ -1846,6 +1853,7 @@
 				856506EE1BEE4F7C00E3F418 /* 导航@2x.png in Resources */,
 				85222AFE1BEB4CFA00C170E2 /* 比赛中@3x.png in Resources */,
 				85222AFD1BEB4CFA00C170E2 /* 报名中@3x.png in Resources */,
+				18DDC1831BFCA58F0032FC62 /* iconfont-dierming@3x.png in Resources */,
 				851F04871BEBA0BB00EFB597 /* 人数@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
